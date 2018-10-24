@@ -7,8 +7,9 @@ Our game:
 
 Features: 
 
-* Multiple Levels.
-* Several speeds.
+* Multiple Levels
+* Several speeds
+* Cool effects
 * Awesome pink!
 
 And all in 2 days!!
