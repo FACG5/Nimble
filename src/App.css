@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+
+body {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #f9f0f6;
+}
+
+.App-logo {
+  height: 150px;
+}
+.App-logo:hover {
+  transform: scale(1.2);
+  filter: opacity(.7) drop-shadow(8px 8px 10px pink);
+}
+
+.animationDown0 {
+  animation:  App-logo-move  infinite 7.5s linear;
+}
+
+.animationDown1 {
+  animation:  App-logo-move  infinite 7s linear;
+}
+
+.animationDown2 {
+  animation:  App-logo-move  infinite 6s linear;
+}
+
+.animationDown3 {
+  animation:  App-logo-move  infinite 5s linear;
+}
+
+.animationDown4 {
+  animation:  App-logo-move  infinite 4s linear;
+}
+
+.animationDown5 {
+  animation:  App-logo-move  infinite 3s linear;
+}
+
+.animationDown6 {
+  animation:  App-logo-move  infinite 2s linear;
+}
+
+
+.animationSideWays {
+  animation: sideWays 2s ease-in-out 
+  infinite alternate;
+}
+@keyframes App-logo-move {
+  from {
+   position: absolute;
+   top: -250px;
+  }
+  to {
+    position: absolute;
+    top: 100vh;
+  }
+}
+
+@keyframes sideWays {
+
+  from{
+    position: relative;
+    left: 0;
+  }
+  to {
+    position: relative;
+    left: 50px
+  }
+}
+#scoreNo {
+  box-shadow: 0 0 3px 2px rgba(0,0,0,.3);
+  border: 1px solid #777;
+  background-color: white;
+  color: #81326c;
+  display:  inline-block;
+  width: 100px;
+  border-radius: 5px; 
+}
+.gameOver{
+  font-family: 'Fascinate Inline';
+  font-size: 80px;
+  margin-top: 40vh;
+  animation: scaleIt infinite 6s linear; 
+  transform: translateY(-50%); 
+}
+@keyframes scaleIt {
+  0% {
+   transform: scale(1);
+  
+  }
+  50% {
+    transform: scale(1.2);
+    letter-spacing: 5px;
+  }
+  100%{
+    transform: scale(1);
+
+  }
+
+}
+#level h1 {
+  font-family: 'Fascinate Inline';
+  clear: left;
+}
+#lives{
+  position: absolute;
+  top: 0;
+ right: 0;
+  margin-right: 10px;
+}
+#lives img{
+  height: 50px;
+}
